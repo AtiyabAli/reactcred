@@ -1,9 +1,15 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { deleteUser } from '../store/userSlice'
 
 const Home = () => {
+  const dispatch = useDispatch()
     const users = useSelector((state)=> state.users)
+
+    const handleDelete = (id) => {
+      dispatch(deleteUser({id: id}))
+    }
 
   return (
     <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
@@ -29,7 +35,7 @@ const Home = () => {
                         <td style={{padding: '30px'}}>{user.name}</td>
                         <td style={{padding: '30px'}}>{user.email}</td>
                         <td style={{padding: '30px'}}><Link to={`/update/${user.id}`}><button style={{backgroundColor: 'green'}}>Edit</button></Link></td>
-                        <td style={{padding: '30px'}}><button style={{backgroundColor: 'red'}}>Delete</button></td>
+                        <td style={{padding: '30px'}}><button style={{backgroundColor: 'red'}} onClick={()=> handleDelete(user.id)}>Delete</button></td>
                     </tr>
                 )
             })
