@@ -7,7 +7,7 @@ import Update from "./components/Update";
 function App() {
   return (
     <div className="App">
-      <h1>CRED operation with RTK</h1>
+      <h1>CRED operation with Redux Toolkit</h1>
       <BrowserRouter >
         <Routes>
           <Route path="/" element={<Home/>}></Route>

@@ -1,17 +1,22 @@
 export const userList = [
     {
-        name: "syed Atiyab",
+        name: "syed Ali",
         email: "syedatiyabali@gmail.com",
         id: 1
     },
     {
-        name: "syed Abid",
-        email: "syedabid@gmail.com",
+        name: "Vikas Gupta",
+        email: "guptavikas@gmail.com",
         id: 2
     },
     {
-        name: "syed Waris",
-        email: "syedwaris@gmail.com",
+        name: "Shahrukh Khan",
+        email: "iamsrk@gmail.com",
+        id: 3
+    },
+    {
+        name: "John Abraham",
+        email: "john@gmail.com",
         id: 3
     },
 ]

@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-      <h1>Crud with Json server</h1>
+      
       <Link to='/create'><button style={{padding: '10px', fontSize: '25px', backgroundColor: 'yellow', borderRadius: '20px'}} className=' btn btn-success my-3'>Add new user +</button></Link>
         
         <table>
